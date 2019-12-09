@@ -87,7 +87,7 @@ def parse_from_string_route():
             )
 
         return Response(
-            json.dumps({"message": (timestamp[0])[0],"readable_time": (timestamp[0])[1] ,"success": True}),
+            json.dumps({"message": (timestamp[0])[1].timestamp(),"readable_time": (timestamp[0])[0] ,"success": True}),
             mimetype="application/json",
             status=200,
         )
