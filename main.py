@@ -14,7 +14,7 @@ def parse_date_route():
         except KeyError:
             return Response(
                 json.dumps(
-                    {"message": "date query parameter not found", "success": false}
+                    {"message": "date query parameter not found", "success": False}
                 ),
                 mimetype="application/json",
                 status=400,
@@ -41,7 +41,7 @@ def parse_date_route():
     except Exception as e:
         print(e)
         return Response(
-            json.dumps({"message": "Internal Server Error", "success": false}),
+            json.dumps({"message": "Internal Server Error", "success": False}),
             mimetype="application/json",
             status=500,
         )
