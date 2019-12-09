@@ -27,7 +27,7 @@ def parse_date_route():
                 json.dumps(
                     {
                         "message": "Parser was not able to parse the date",
-                        "success": false,
+                        "success": False,
                     }
                 ),
                 mimetype="application/json",
