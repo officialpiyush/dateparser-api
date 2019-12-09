@@ -74,7 +74,7 @@ def parse_from_string_route():
                 mimetype="application/json",
                 status=400,
             )
-        if len(timestamp) <= 0:
+        if len(timestamp) <= 0 or timestamp is None:
             return Response(
                 json.dumps(
                     {
