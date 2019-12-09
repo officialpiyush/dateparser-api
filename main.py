@@ -2,7 +2,7 @@ import os
 import json
 from flask import Flask, Response, request as _request
 from dateparser import parse
- from dateparser.search import search_dates
+from dateparser.search import search_dates
 
 app = Flask(__name__)
 
